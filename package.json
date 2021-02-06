@@ -1,0 +1,24 @@
+{
+  "name": "scratch_file_analyze",
+  "version": "1.0.0",
+  "description": ".sb3 analyze",
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/368573607/scratch_file_analyze.git"
+  },
+  "keywords": [
+    "scratch",
+    ".sb3",
+    "analyze"
+  ],
+  "author": "xuhuading@foxmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/368573607/scratch_file_analyze/issues"
+  },
+  "homepage": "https://github.com/368573607/scratch_file_analyze#readme"
+}
