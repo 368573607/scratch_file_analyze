@@ -1,5 +1,5 @@
-const add = require("../src/add");
-const get_opcode = require("../src/get_opcode");
+const add = require("./add");
+const get_opcode = require("./get_opcode");
 
 let analyze = function (json) {
     return new Promise((resolve, reject) => {
