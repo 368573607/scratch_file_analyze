@@ -1,1 +1,275 @@
-{"targets":[{"isStage":true,"name":"Stage","variables":{"=UBuHP@hPfX[_F[/@FO^":["123",0]},"lists":{"!#3F`hRh.p4Fh^lre^DZ":["23",[]]},"broadcasts":{},"blocks":{"AX9!(GeXM/7Yv~@Z{=y$":{"opcode":"event_whenflagclicked","next":null,"parent":null,"inputs":{},"fields":{},"shadow":false,"topLevel":true,"x":190,"y":87},"}8h4gq@!(B{?7glI+Z`?":{"opcode":"event_whenkeypressed","next":null,"parent":null,"inputs":{},"fields":{"KEY_OPTION":["space",null]},"shadow":false,"topLevel":true,"x":220,"y":249},"#`L8=c_~[lBQsqx4dedf":{"opcode":"control_repeat","next":null,"parent":null,"inputs":{"TIMES":[1,[6,"10"]]},"fields":{},"shadow":false,"topLevel":true,"x":286,"y":544},"NET_v@4^5pbOpW_bYF13":{"opcode":"control_repeat","next":null,"parent":null,"inputs":{"TIMES":[1,[6,"10"]]},"fields":{},"shadow":false,"topLevel":true,"x":182,"y":371},"zon7dF#qEBkSOQ!#E!yH":{"opcode":"sensing_askandwait","next":null,"parent":null,"inputs":{"QUESTION":[1,[10,"你叫什么名字？"]]},"fields":{},"shadow":false,"topLevel":true,"x":181,"y":734}},"comments":{},"currentCostume":0,"costumes":[{"assetId":"797b03bdb8cf6ccfc30c0692d533d998","name":"背景1","bitmapResolution":2,"md5ext":"797b03bdb8cf6ccfc30c0692d533d998.png","dataFormat":"png","rotationCenterX":480,"rotationCenterY":360}],"sounds":[{"assetId":"83a9787d4cb6f3b7632b4ddfebf74367","name":"流行音乐","dataFormat":"wav","format":"","rate":48000,"sampleCount":1123,"md5ext":"83a9787d4cb6f3b7632b4ddfebf74367.wav"}],"volume":100,"layerOrder":0,"tempo":60,"videoTransparency":50,"videoState":"off","textToSpeechLanguage":null},{"isStage":false,"name":"角色1","variables":{},"lists":{},"broadcasts":{},"blocks":{"|Z6fw5iSFt*VNoPY|UQQ":{"opcode":"operator_add","next":null,"parent":null,"inputs":{"NUM1":[1,[4,""]],"NUM2":[1,[4,""]]},"fields":{},"shadow":false,"topLevel":true,"x":312,"y":384},".+}#bqbQ9HZ5cT;E}mMx":{"opcode":"data_addtolist","next":null,"parent":null,"inputs":{"ITEM":[3,[12,"123","=UBuHP@hPfX[_F[/@FO^"],[10,"东西"]]},"fields":{"LIST":["23","!#3F`hRh.p4Fh^lre^DZ"]},"shadow":false,"topLevel":true,"x":54,"y":646}},"comments":{},"currentCostume":0,"costumes":[{"assetId":"3339a2953a3bf62bb80e54ff575dbced","name":"造型1","bitmapResolution":1,"md5ext":"3339a2953a3bf62bb80e54ff575dbced.svg","dataFormat":"svg","rotationCenterX":0,"rotationCenterY":0}],"sounds":[{"assetId":"83a9787d4cb6f3b7632b4ddfebf74367","name":"啵","dataFormat":"wav","format":"","rate":48000,"sampleCount":1123,"md5ext":"83a9787d4cb6f3b7632b4ddfebf74367.wav"}],"volume":100,"layerOrder":1,"visible":true,"x":36,"y":28,"size":100,"direction":90,"draggable":false,"rotationStyle":"all around"}],"monitors":[{"id":"=UBuHP@hPfX[_F[/@FO^","mode":"default","opcode":"data_variable","params":{"VARIABLE":"123"},"spriteName":null,"value":0,"width":0,"height":0,"x":5,"y":5,"visible":true,"sliderMin":0,"sliderMax":100,"isDiscrete":true},{"id":"!#3F`hRh.p4Fh^lre^DZ","mode":"list","opcode":"data_listcontents","params":{"LIST":"23"},"spriteName":null,"value":[],"width":0,"height":0,"x":5,"y":35,"visible":true}],"extensions":[],"meta":{"semver":"3.0.0","vm":"0.2.0","agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4385.0 Safari/537.36"}}
+{
+    "targets": [
+        {
+            "isStage": true,
+            "name": "Stage",
+            "variables": {
+                "=UBuHP@hPfX[_F[/@FO^": [
+                    "123",
+                    0
+                ]
+            },
+            "lists": {
+                "!#3F`hRh.p4Fh^lre^DZ": [
+                    "23",
+                    []
+                ]
+            },
+            "broadcasts": {},
+            "blocks": {
+                "AX9!(GeXM/7Yv~@Z{=y$": {
+                    "opcode": "event_whenflagclicked",
+                    "next": null,
+                    "parent": null,
+                    "inputs": {},
+                    "fields": {},
+                    "shadow": false,
+                    "topLevel": true,
+                    "x": 190,
+                    "y": 87
+                },
+                "}8h4gq@!(B{?7glI+Z`?": {
+                    "opcode": "event_whenkeypressed",
+                    "next": null,
+                    "parent": null,
+                    "inputs": {},
+                    "fields": {
+                        "KEY_OPTION": [
+                            "space",
+                            null
+                        ]
+                    },
+                    "shadow": false,
+                    "topLevel": true,
+                    "x": 220,
+                    "y": 249
+                },
+                "#`L8=c_~[lBQsqx4dedf": {
+                    "opcode": "control_repeat",
+                    "next": null,
+                    "parent": null,
+                    "inputs": {
+                        "TIMES": [
+                            1,
+                            [
+                                6,
+                                "10"
+                            ]
+                        ]
+                    },
+                    "fields": {},
+                    "shadow": false,
+                    "topLevel": true,
+                    "x": 286,
+                    "y": 544
+                },
+                "NET_v@4^5pbOpW_bYF13": {
+                    "opcode": "control_repeat",
+                    "next": null,
+                    "parent": null,
+                    "inputs": {
+                        "TIMES": [
+                            1,
+                            [
+                                6,
+                                "10"
+                            ]
+                        ]
+                    },
+                    "fields": {},
+                    "shadow": false,
+                    "topLevel": true,
+                    "x": 182,
+                    "y": 371
+                },
+                "zon7dF#qEBkSOQ!#E!yH": {
+                    "opcode": "sensing_askandwait",
+                    "next": null,
+                    "parent": null,
+                    "inputs": {
+                        "QUESTION": [
+                            1,
+                            [
+                                10,
+                                "你叫什么名字？"
+                            ]
+                        ]
+                    },
+                    "fields": {},
+                    "shadow": false,
+                    "topLevel": true,
+                    "x": 181,
+                    "y": 734
+                }
+            },
+            "comments": {},
+            "currentCostume": 0,
+            "costumes": [
+                {
+                    "assetId": "797b03bdb8cf6ccfc30c0692d533d998",
+                    "name": "背景1",
+                    "bitmapResolution": 2,
+                    "md5ext": "797b03bdb8cf6ccfc30c0692d533d998.png",
+                    "dataFormat": "png",
+                    "rotationCenterX": 480,
+                    "rotationCenterY": 360
+                }
+            ],
+            "sounds": [
+                {
+                    "assetId": "83a9787d4cb6f3b7632b4ddfebf74367",
+                    "name": "流行音乐",
+                    "dataFormat": "wav",
+                    "format": "",
+                    "rate": 48000,
+                    "sampleCount": 1123,
+                    "md5ext": "83a9787d4cb6f3b7632b4ddfebf74367.wav"
+                }
+            ],
+            "volume": 100,
+            "layerOrder": 0,
+            "tempo": 60,
+            "videoTransparency": 50,
+            "videoState": "off",
+            "textToSpeechLanguage": null
+        },
+        {
+            "isStage": false,
+            "name": "角色1",
+            "variables": {},
+            "lists": {},
+            "broadcasts": {},
+            "blocks": {
+                "|Z6fw5iSFt*VNoPY|UQQ": {
+                    "opcode": "operator_add",
+                    "next": null,
+                    "parent": null,
+                    "inputs": {
+                        "NUM1": [
+                            1,
+                            [
+                                4,
+                                ""
+                            ]
+                        ],
+                        "NUM2": [
+                            1,
+                            [
+                                4,
+                                ""
+                            ]
+                        ]
+                    },
+                    "fields": {},
+                    "shadow": false,
+                    "topLevel": true,
+                    "x": 312,
+                    "y": 384
+                },
+                ".+}#bqbQ9HZ5cT;E}mMx": {
+                    "opcode": "data_addtolist",
+                    "next": null,
+                    "parent": null,
+                    "inputs": {
+                        "ITEM": [
+                            3,
+                            [
+                                12,
+                                "123",
+                                "=UBuHP@hPfX[_F[/@FO^"
+                            ],
+                            [
+                                10,
+                                "东西"
+                            ]
+                        ]
+                    },
+                    "fields": {
+                        "LIST": [
+                            "23",
+                            "!#3F`hRh.p4Fh^lre^DZ"
+                        ]
+                    },
+                    "shadow": false,
+                    "topLevel": true,
+                    "x": 54,
+                    "y": 646
+                }
+            },
+            "comments": {},
+            "currentCostume": 0,
+            "costumes": [
+                {
+                    "assetId": "3339a2953a3bf62bb80e54ff575dbced",
+                    "name": "造型1",
+                    "bitmapResolution": 1,
+                    "md5ext": "3339a2953a3bf62bb80e54ff575dbced.svg",
+                    "dataFormat": "svg",
+                    "rotationCenterX": 0,
+                    "rotationCenterY": 0
+                }
+            ],
+            "sounds": [
+                {
+                    "assetId": "83a9787d4cb6f3b7632b4ddfebf74367",
+                    "name": "啵",
+                    "dataFormat": "wav",
+                    "format": "",
+                    "rate": 48000,
+                    "sampleCount": 1123,
+                    "md5ext": "83a9787d4cb6f3b7632b4ddfebf74367.wav"
+                }
+            ],
+            "volume": 100,
+            "layerOrder": 1,
+            "visible": true,
+            "x": 36,
+            "y": 28,
+            "size": 100,
+            "direction": 90,
+            "draggable": false,
+            "rotationStyle": "all around"
+        }
+    ],
+    "monitors": [
+        {
+            "id": "=UBuHP@hPfX[_F[/@FO^",
+            "mode": "default",
+            "opcode": "data_variable",
+            "params": {
+                "VARIABLE": "123"
+            },
+            "spriteName": null,
+            "value": 0,
+            "width": 0,
+            "height": 0,
+            "x": 5,
+            "y": 5,
+            "visible": true,
+            "sliderMin": 0,
+            "sliderMax": 100,
+            "isDiscrete": true
+        },
+        {
+            "id": "!#3F`hRh.p4Fh^lre^DZ",
+            "mode": "list",
+            "opcode": "data_listcontents",
+            "params": {
+                "LIST": "23"
+            },
+            "spriteName": null,
+            "value": [],
+            "width": 0,
+            "height": 0,
+            "x": 5,
+            "y": 35,
+            "visible": true
+        }
+    ],
+    "extensions": [],
+    "meta": {
+        "semver": "3.0.0",
+        "vm": "0.2.0",
+        "agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4385.0 Safari/537.36"
+    }
+}
