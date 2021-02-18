@@ -35,8 +35,20 @@ let getBlock = (json, block) => {
     });
 }
 
+let getBlocks = (json) => { //使用 Promise 封装 get_blocks.js
+    const getBlocksTool = require("./get_blocks");
+    return new Promise((resolve, reject) => {
+        try {
+            resolve(getBlocksTool(json));
+        } catch (err) {
+            reject(err);
+        }
+    });
+}
+
 module.exports = {
     getAnalyze: getAnalyze,
     getBlocksQuantity: getBlocksQuantity,
-    getBlock: getBlock
+    getBlock: getBlock,
+    getBlocks: getBlocks
 };

@@ -16,6 +16,11 @@ analyze.getBlocksQuantity(testjson).then((result) => {
 analyze.getBlock(testjson, "event").then((result) => {
     console.log(result);
 }).catch((err) => {
-    console.log(err);
+    console.error(err);
 });
 
+analyze.getBlocks(testjson).then((result)=>{
+    console.log(result);
+}).catch((err)=>{
+    console.error(err);
+});
