@@ -1,10 +1,10 @@
 const add = require("./add");
-const get_opcode = require("./get_opcode");
+const getOpcode = require("./get_opcode");
 
-let get_analyze = (json) => {
+let getAnalyze = (json) => {
     return new Promise((resolve, reject) => {
         try {
-            let opcodes = get_opcode(json);
+            let opcodes = getOpcode(json);
             resolve(add(opcodes));
         } catch (e) {
             reject(e);
@@ -12,9 +12,9 @@ let get_analyze = (json) => {
     })
 }
 
-let get_blocks_quantity = (json) => {
+let getBlocksQuantity = (json) => {
     return new Promise((resolve, reject) => {
-        get_analyze(json).then((result) => {
+        getAnalyze(json).then((result) => {
             let blocks = result;
             resolve(Object.keys(blocks).length);
         }).catch((err) => {
@@ -23,11 +23,11 @@ let get_blocks_quantity = (json) => {
     })
 }
 
-let get_block = (json, block) => {
+let getBlock = (json, block) => {
     return new Promise((resolve, reject) => {
-        let allquantity = get_blocks_quantity(json);
+        let allquantity = getBlocksQuantity(json);
 
-        get_analyze(json).then((result) => {
+        getAnalyze(json).then((result) => {
             resolve(result[block]);
         }).catch((err) => {
             reject(err);
@@ -36,7 +36,7 @@ let get_block = (json, block) => {
 }
 
 module.exports = {
-    get_analyze: get_analyze,
-    get_blocks_quantity: get_blocks_quantity,
-    get_block: get_block
+    getAnalyze: getAnalyze,
+    getBlocksQuantity: getBlocksQuantity,
+    getBlock: getBlock
 };

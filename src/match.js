@@ -1,7 +1,7 @@
-let match_opcode = function (opcode) {
+let matchOpcode = function (opcode) {
     let match = opcode.replace(/(?<=.+)(_.*)/, "");
 
     return match;
 }
 
-module.exports = match_opcode;
+module.exports = matchOpcode;
