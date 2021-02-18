@@ -7,7 +7,7 @@ let get_analyze = (json) => {
             let opcodes = get_opcode(json);
             resolve(add(opcodes));
         } catch (e) {
-            reject(new Error(e));
+            reject(e);
         }
     })
 }
@@ -18,7 +18,7 @@ let get_blocks_quantity = (json) => {
             let blocks = result;
             resolve(Object.keys(blocks).length);
         }).catch((err) => {
-            reject(new Error(err));
+            reject(err);
         });
     })
 }
@@ -30,7 +30,7 @@ let get_block = (json, block) => {
         get_analyze(json).then((result) => {
             resolve(result[block]);
         }).catch((err) => {
-            reject(new Error(err));
+            reject(err);
         });
     });
 }
