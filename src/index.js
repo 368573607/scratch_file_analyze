@@ -1,7 +1,7 @@
 const add = require("./add");
 const getOpcode = require("./get_opcode");
 
-let getAnalyze = (json) => {
+const getAnalyze = (json) => {
     return new Promise((resolve, reject) => {
         try {
             let opcodes = getOpcode(json);
@@ -12,7 +12,7 @@ let getAnalyze = (json) => {
     })
 }
 
-let getBlocksQuantity = (json) => {
+const getBlocksQuantity = (json) => {
     return new Promise((resolve, reject) => {
         getAnalyze(json).then((result) => {
             let blocks = result;
@@ -23,7 +23,7 @@ let getBlocksQuantity = (json) => {
     })
 }
 
-let getBlock = (json, block) => {
+const getBlock = (json, block) => {
     return new Promise((resolve, reject) => {
         let allquantity = getBlocksQuantity(json);
 
@@ -35,7 +35,7 @@ let getBlock = (json, block) => {
     });
 }
 
-let getBlocks = (json) => { //使用 Promise 封装 get_blocks.js
+const getBlocks = (json) => { //使用 Promise 封装 get_blocks.js
     const getBlocksTool = require("./get_blocks");
     return new Promise((resolve, reject) => {
         try {
@@ -47,8 +47,8 @@ let getBlocks = (json) => { //使用 Promise 封装 get_blocks.js
 }
 
 module.exports = {
-    getAnalyze: getAnalyze,
-    getBlocksQuantity: getBlocksQuantity,
-    getBlock: getBlock,
-    getBlocks: getBlocks
+    getAnalyze,
+    getBlocksQuantity,
+    getBlock,
+    getBlocks
 };
