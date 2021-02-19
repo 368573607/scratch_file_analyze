@@ -46,9 +46,25 @@ const getBlocks = (json) => { //使用 Promise 封装 get_blocks.js
     });
 }
 
+const tools = obj => {
+    return ({
+        usemin: () => {
+            const UseMin = require("./tool/usemin");
+            return new Promise((resolve, reject) => {
+                try {
+                    resolve(UseMin(obj));
+                } catch (err) {
+                    reject(err);
+                }
+            });
+        }
+    });
+}
+
 module.exports = {
     getAnalyze,
     getBlocksQuantity,
     getBlock,
-    getBlocks
+    getBlocks,
+    tools
 };
